@@ -76,9 +76,9 @@ type GameConfig struct {
 	MOTD          string          `name:"g_motd"`
 	QuadFactor    int             `name:"g_quadfactor"`
 	WeaponRespawn int             `name:"g_weaponrespawn"`
-	BotEnable     bool            `name:bot_enable`
-	BotMinplayers int             `name:bot_minplayers`
-	BotNoChat     bool            `name:bot_nochat`
+	BotEnable     bool            `name:"bot_enable"`
+	BotMinplayers int             `name:"bot_minplayers"`
+	BotNoChat     bool            `name:"bot_nochat"`
 }
 
 type FileServerConfig struct {
