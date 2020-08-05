@@ -79,6 +79,7 @@ type GameConfig struct {
 	BotEnable     bool            `name:"bot_enable"`
 	BotMinplayers int             `name:"bot_minplayers"`
 	BotNoChat     bool            `name:"bot_nochat"`
+	botSkill      int             `name:"g_spskill"`
 }
 
 type FileServerConfig struct {
@@ -194,6 +195,7 @@ func Default() *Config {
 			BotEnable: false,
 			BotMinplayers: 0,
 			BotNoChat: true,
+			BotSkill: 4,
 		},
 		ServerConfig: ServerConfig{
 			MaxClients: 12,
