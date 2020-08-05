@@ -18,6 +18,9 @@ game:
   inactivity: 10m
   quadFactor: 3
   weaponRespawn: 3
+		botEnable: true
+		botMinPlayers: 4
+		botNoChat: false
 server:
   hostname: "quakekube"
   maxClients: 12
@@ -46,6 +49,9 @@ seta g_log ""
 seta g_motd "Welcome to Critical Stack"
 seta g_quadfactor "3"
 seta g_weaponrespawn "3"
+seta bot_enable "1"
+seta bot_minplayers "4"
+seta bot_nochat "1"
 seta fs_basegame ""
 seta fs_basepath ""
 seta fs_copyfiles "0"
