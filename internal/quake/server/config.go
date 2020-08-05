@@ -76,6 +76,9 @@ type GameConfig struct {
 	MOTD          string          `name:"g_motd"`
 	QuadFactor    int             `name:"g_quadfactor"`
 	WeaponRespawn int             `name:"g_weaponrespawn"`
+	BotEnable     bool            `name:bot_enable`
+	BotMinplayers int             `name:bot_minplayers`
+	BotNoChat     bool            `name:bot_nochat`
 }
 
 type FileServerConfig struct {
@@ -188,6 +191,9 @@ func Default() *Config {
 			WeaponRespawn: 3,
 			Inactivity:    metav1.Duration{Duration: 10 * time.Minute},
 			ForceRespawn:  false,
+			BotEnable: false,
+			BotMinplayers: 0,
+			BotNoChat: true,
 		},
 		ServerConfig: ServerConfig{
 			MaxClients: 12,
