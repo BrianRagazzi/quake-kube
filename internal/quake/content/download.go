@@ -13,7 +13,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	httputil "github.com/criticalstack/quake-kube/internal/util/net/http"
+	httputil "github.com/BrianRagazzi/quake-kube/internal/util/net/http"
 )
 
 func CopyAssets(u *url.URL, dir string) error {

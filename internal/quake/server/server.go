@@ -10,7 +10,7 @@ import (
 
 	"sigs.k8s.io/yaml"
 
-	"github.com/criticalstack/quake-kube/internal/util/exec"
+	"github.com/BrianRagazzi/quake-kube/internal/util/exec"
 )
 
 type Server struct {
